@@ -14,6 +14,8 @@
     h5 {
         font-family: "Raleway", sans-serif
     }
+    
+}
     body {
                 
 ;
@@ -28,7 +30,7 @@
     .w3-third img:hover {
         opacity: 1
     }
-    a:link, a:visited {
+    #a:link, #a:visited {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -119,9 +121,9 @@
     
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     
-        <a href="#">About</a>
+        <a href=#PORTFOLIO">PORTFOLIO</a>
     
-        <a href="#">Services</a>
+        <a href="#About">About Us</a>
     
         <a href="#">front end</a>
     
@@ -146,35 +148,26 @@
         }
     
         </script></div>
-    <div ><body style="background-image: url("firstpagebg.png");
-       "
-      ><pre> <a href="aboutus.html" style="color:#2977c9;text-decoration: none ;font-size: x-large;">About us</a><a href="enroll.html" target="_blank"><button id="signin" style="height: 40px; width: 130px; border-radius: 300px;margin-left: 1200px;">join now</button></a></pre>
-    <br><br><br><br><br><br>
-    <br>
+    <div style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1mt9Gpq78SXegSOocqgFgXzp7r7Mulfy4hg&usqp=CAU) center ; 
+    background-size: cover;">
+        
+        <div ><p> <a href="aboutus.html" style="color:#2977c9;text-decoration: none ;font-size: x-large;">About us</a><a href="enroll.html" target="_blank"><button id="signin" style="height: 40px; width: 130px; border-radius: 300px;margin-left: 1200px;">join now</button></a></p>
+    <br><br><br><br><br>
+    <br></div>
     <div id="text">
-    <span> job hub</span>
-    </div><br><br>
-    <pre>
-<a id=" main" href="page2_inv.html" target="_blank"><button name="page2" class="button">job seeker                               <span class="arrow">></span></button></a><br><br>
-<a  id=" main" href="page2_org.html" target="_blank"><button name="page2org" class="button">recruiter                                 <span class="arrow">></span></button></a>
-    </pre></body></div>
+    <span style="margin-left: 5em; color: rgb(51, 191, 230); font-size: larger;"> job hub</span>
+    </div>
 
-    <!-- Sidebar/menu -->    
-   
-    <!-- Top menu on small screens -->
-    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">Job Hub</span>
-        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-    </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
+    <pre><a id="main" href="page2_inv.html" target="_blank"><button style="border-radius: 12px;" name="page2" class="button">job seeker        <span class="arrow">></span></button></a><br><br>
+<a  id=" main" href="page2_org.html" target="_blank"><button style="border-radius: 12px; " name="page2org" class="button">recruiter       <span class="arrow">></span></button></a>
+    </pre></body> </div>   
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
         title="close side menu" id="myOverlay"></div>
 
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:300px">
+   
+    <div class="w3-main" style="margin-left:0px">
 
-        <!-- Push down content on small screens -->
+       
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
         
@@ -216,7 +209,7 @@
        <br>
        <br>
 
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+        <div id="About" class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
             <h4><b>Emplyment Exchange </b></h4>
             <img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMDY0MzY0NS9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTY2MTg4NTk3Nn0.F-sLJ7_i5tEgYf_e2fKaBsF-ukFtFQp3q0aNdattVUg/img.png?quality=80&width=930" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
             <div class="w3-content w3-justify" style="max-width:600px">
@@ -249,7 +242,7 @@
                 <br>
                 <br>
 
-                <a href="D:\semseter 2\UID\html\enroll.html" target="_blank">Join Now</a>
+                <a id="a" href="D:\semseter 2\UID\html\enroll.html" target="_blank">Join Now</a>
                 <hr class="w3-opacity">
 
                 <h4 class="w3-padding-16">How much we charge</h4>
@@ -265,7 +258,8 @@
                                 <span class="w3-opacity">per application</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large"> apply</button>
+                                <a  id="a" href="D:\semseter 2\UID\html\enroll.html"
+                                title="W3.CSS" target="_blank" class="w3-hover-opacity">Apply</a>
                             </li>
                         </ul>
                     </div>
@@ -281,7 +275,8 @@
                                 <span class="w3-opacity">per employe</span>
                             </li>
                             <li class="w3-light-grey w3-padding-24">
-                                <button class="w3-button w3-white w3-padding-large">search </button>
+                                <a  id="a" href="D:\semseter 2\UID\html\enroll.html"
+                                title="W3.CSS" target="_blank" class="w3-hover-opacity">Search</a>
                             </li>
                         </ul>
                     </div>
@@ -361,7 +356,7 @@
             </div>
         </footer>
 
-        <div class="w3-black w3-center w3-padding-24">Powered by <a href="#"
+        <div class="w3-black w3-center w3-padding-24">Powered by <a  id="a" href="#PORTFOLIO"
                 title="W3.CSS" target="_blank" class="w3-hover-opacity">Job Hub </a></div>
 
         
