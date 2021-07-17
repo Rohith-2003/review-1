@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>
+Login page
+</title>
+<style>
+#frm
+{
+  text-align: center;
+  position: fixed;
+  top: 14%;
+  left: 30%;
+  font-family: cursive;
+  line-height: 36px;
+  font-size: 16 px;
+  background-color: darkgrey;
+
+  
+}
+.button
+{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.head
+{
+  text-align: center;
+  position: fixed;
+  top: 1%;
+  left: 30%;
+  font-family: cursive;
+}
+#err
+{
+  font-size: larger;
+  font-style: normal;
+  color: crimson;
+  text-align: center;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  font-family: cursive;
+  line-height: 36px;
+  font-size: 16 px;
+}
+#flyer1
+{
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+#flyer1:hover
+{
+  height: 190px;
+}
+#flyer2
+{
+  left: -500px;
+  top:310px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+#flyer2:hover
+{
+  height: 190px;
+}
+#image
+{
+  left: 50%;
+  position: fixed;
+}
+</style>
+</head>
+<body>
+<h1 class="head">
+Already an user?<br>
+Click here to Login<br><br>
+</h1>
+<div id="frm">
+<form name="login">
+Username&nbsp;<input type="text" name="userid"/><br> 
+Password&nbsp;<input type="password" name="pswrd"/><br><br>
+<input type="button" class="button" onclick="check(this.form)" value="Login"/><br><br>
+<input class="button" type="reset" value="Reset" onclick="reset()"/>
+</form>
+</div>
+<div id="err">
+</div>
+<div id="flyer1" onscroll="change()">
+<p> Check Check check
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+unknown printer took a galley of type and scrambled it to make a type specimen book. It
+has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged. It was popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+</div>
+<div id="flyer2">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown printer took a galley of type and scrambled it to make a type specimen book. It
+    has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of
+    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<div id="image">
+  <img src="https://w7.pngwing.com/pngs/831/484/png-transparent-person-working-on-computer-screenshot-icon-office-work-text-computer-program-happy-birthday-vector-images-thumbnail.png" alt="Login image" width="460" height="345">
+</div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "Rengaraj_R" && form.pswrd.value == "password")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+else if(form.userid.value == "Raakesh_M" && form.pswrd.value == "mypswrd")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+else if(form.userid.value == "Sai_Mrdhun" && form.pswrd.value == "my_pass")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+else if(form.userid.value == "Vamsi" && form.pswrd.value == "pass1234")
+  {
+    window.open('target.html')/*opens the target page while Id & password matches*/
+  }
+  else if(form.userid.value == "" || form.pswrd.value == "")
+  {
+    document.getElementById('err').innerHTML="Username or password not filled";
+  }
+ else
+ {
+  document.getElementById('frm').style.backgroundColor="crimson";
+  document.getElementById('err').innerHTML="Error Password or Username";
+  }
+}
+
+
+</script>
+</body>
+</html>
